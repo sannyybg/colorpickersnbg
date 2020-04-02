@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    background-color: black;
+    
+}
+
+#maincdiv {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+}
+
+#maintext {
+    font-family: 'Audiowide', serif;
+    font-size: 27px;
+    color: white;
+}
+
+#colorpickerbtn1 {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: rgb(192, 57, 43);
+    border: none;
+    border-radius: 6px;
+}
+
+#colorpickerbtn2 {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: rgb(106, 176, 76);
+    border: none;
+    border-radius: 6px;
+}
+
+#colorpickerbtn3 {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: red; /* for not supporter browsers */
+    background-image: linear-gradient(to right, red, yellow, green, blue, violet);
+}
+
+#colorpickerbtn4 {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: rgb(249, 202, 36);
+    border: none;
+    border-radius: 6px;
+}
+
+#colorpickerbtn5 {
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: rgb(72, 52, 212);
+    border: none;
+    border-radius: 6px;
+}
+
+
+.colorname {
+    font-family: 'Arvo', serif;
+    font-size: 26px;
+}
+
+
+.colorcode {
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+#copybutton {
+    border: 1px solid black;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: 'Arvo', serif;
+    color: black;
+    cursor: pointer;
+    background-color: grey;
+}
+    
+    
+.colordiv {
+    width: 100%;
+    height: 120px;
+    border-top: 1px black solid;
+}
+
+
+.colordiv:hover {
+    width: 80%;
+    animation: divanime 3s infinite;
+
+
+}
+
+#div1 {
+    background-color: #2ecc71;
+}
+#div2 {
+    background-color: #34495e;
+}
+#div3 {
+    background-color: #e67e22;
+}
+#div4 {
+    background-color: #e74c3c;
+}
+#div5 {
+    background-color: #d35400;
+}
+#div6 {
+    background-color: #3498db;
+}
+#div7 {
+    background-color: #f1c40f;
+}
+#div8 {
+    background-color: #95a5a6;
+}
+#div9 {
+    background-color: #9b59b6;
+}
+#div10 {
+    background-color: #1abc9c;
+}
+
+
+
+#footerdiv {
+    width: 90%;
+    border-top: 2px solid #fa983a;
+    
+}
+
+#infobox {
+    display: inline-block;
+    width: 400px;
+    border-top: 2px white dashed ;
+    float: left;
+    margin: 20px;
+
+    
+    
+
+}
+
+
+#infohead {
+    font-size: 22px;
+    color:white;
+    font-family: 'Audiowide', sans-serif;
+    float: left;
+}
+
+
+#infoid {
+    font-size: 16px;
+    font-family: 'Arvo', serif;
+    color: white;
+    float: left;
+    margin: 8px;
+    text-align: justify;
+}
+
+
+#facebk {
+    color: royalblue;
+    font-size: 30px;
+    float: left;
+    cursor: pointer;
+}
+
+#twitt {
+    color: #74b9ff;
+    font-size: 30px;
+    float: left;
+    cursor: pointer;
+}
+
+#instagram {
+    color: #ff6b81;
+    font-size: 30px;
+    float: left;
+    cursor: pointer;
+}
+
+#phone {
+    color: #C4E538;
+    font-size: 30px;
+    float: left;
+    cursor: pointer;
+}
+
+
+#sgagoshidze {
+    color: white;
+    font-size: 22px;
+    font-family: 'Audiowide', serif;
+}
+
+
+
+
+
+
+
+
+.sound1 {
+    display: none;
+ }
+ 
+
+@keyframes divanime {
+    0% {width: 100%;}
+    50% {width: 75%;}
+    100% {width: 100%;}
+    
+}
+
+
+@media only screen and (max-width: 570px) {
+    #maintext {
+        font-size: 20px;
+        
+    }
+
+}

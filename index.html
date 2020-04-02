@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Color Picker</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="colorp.css">
+        <link href="https://fonts.googleapis.com/css?family=Arvo|Do+Hyeon|Audiowide|Exo+2|Ubuntu&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="colopck.js"></script>
+        
+
+    </head>
+    <body>
+        <center>
+        <div id="maincdiv"><span id="maintext">BEST FLAT COLORS BY SANNYBG</span><br>
+            <button onclick="redbutton()" id="colorpickerbtn1"></button>
+            <button onclick="greenbutton()" id="colorpickerbtn2"></button>
+            <button onclick="window.location.href='index.html'" id="colorpickerbtn3"></button>
+            <button onclick="yellowbutton()" id="colorpickerbtn4"></button>
+            <button onclick="bluebutton()" id="colorpickerbtn5"></button>
+        </div>
+        </center>
+        <br><br><br><br><br><br>
+        <center>
+        <div class="colordiv" id="div1"><span id="name1" class="colorname">EMERALD</span><br><span id="emerald"  class="colorcode">#2ecc71</span><br><br><button onclick="copyToClipboard('#emerald')" id="copybutton" onclick="emeraldFunc()">COPY</button></div>
+        <div class="colordiv" id="div2"><span id="name2" class="colorname">WET ASPHALT</span><br><span id="wetasphalt" class="colorcode">#34495e</span><br><br><button  onclick="copyToClipboard('#wetasphalt')" id="copybutton">COPY</button></div>
+        <div class="colordiv" id="div3"><span id="name3" class="colorname">CARROT</span><br><span id="carrot" class="colorcode">#e67e22</span><br><br><button onclick="copyToClipboard('#carrot')"  id="copybutton">COPY</button></div>
+        <div class="colordiv" id="div4"><span id="name4" class="colorname">ALIZARIN</span><br><span id="alizarin" class="colorcode">#e74c3c</span><br><br><button  onclick="copyToClipboard('#alizarin')"  id="copybutton">COPY</button></div>
+        <div class="colordiv" id="div5"><span id="name5" class="colorname">PUMPKIN</span><br><span id="pumpkin" class="colorcode">#d35400</span><br><br><button  onclick="copyToClipboard('#pumpkin')" id="copybutton">COPY</button></div>
+        <div class="colordiv" id="div6"><span id="name6" class="colorname">PETER RIVER</span><br><span id="peterriver" class="colorcode">#3498db</span><br><br><button onclick="copyToClipboard('#peterriver')"   id="copybutton">COPY</button></div>
+        <div class="colordiv" id="div7"><span id="name7" class="colorname">SUNFLOWER</span><br><span id="sunflower" class="colorcode">#f1c40f</span><br><br><button onclick="copyToClipboard('#sunflower')"  id="copybutton">COPY</button></div>
+        <div class="colordiv" id="div8"><span id="name8" class="colorname">CONCRETE</span><br><span id="concrete" class="colorcode">#95a5a6</span><br><br><button  onclick="copyToClipboard('#concrete')"  id="copybutton">COPY</button></div>
+        <div class="colordiv" id="div9"><span id="name9" class="colorname">AMETHYST</span><br><span id="amethyst" class="colorcode">#9b59b6</span><br><br><button onclick="copyToClipboard('#amethyst')"   id="copybutton">COPY</button></div>
+        <div class="colordiv" id="div10"><span id="name10" class="colorname">TURQUOISE</span><br><span id="turquoise" class="colorcode">#1abc9c</span><br><br><button onclick="copyToClipboard('#turquoise')"  id="copybutton">COPY</button></div>
+        </center>
+
+
+        <audio id="soundd1" class="sound1" controls>
+            <source src="copyaudio.mp3" type="audio/mpeg">
+            <source src="copyaudio.ogg" type="audio/ogg">
+        </audio>
+
+        <br><br><br><br>
+
+        <center>
+        <div id="footerdiv"><br>
+            <div id="infobox">
+                <span id="infohead">CONTACT</span><br><br>
+                <i id="facebk" class="fab fa-facebook-square"></i><span id="infoid"> Sandro gagoshidze</span><br><br>
+                <i id="instagram" class="fab fa-instagram"></i><span id="infoid"> sannyybg</span><br><br>
+                <i id="twitt" class="fab fa-twitter"></i><span id="infoid"> s93gagoshidze</span><br><br>
+                <i id="phone" class='fas fa-mobile-alt'></i><span id="infoid"> +995 5551236785</span><br><br>
+                
+
+
+
+            </div>
+
+            <div id="infobox">
+                <span id="infohead">ABOUT</span><br>
+                <span id="infoid">This is a hexademical codes color picker, with beautiful colors and simple copy buttons by sannybg.</span><br><br><br>
+                <span id="infoid">SOURCE COLORS: www.flatuicolors.com</span>
+
+
+
+
+            </div>
+
+
+
+        </div>
+        </center>
+        
+
+
+        
+    
+        
+        <script>
+            function copyToClipboard(element) {
+                var $temp = $("<input>");
+                $("body").append($temp);
+                $temp.val($(element).text()).select();
+                document.execCommand("copy");
+                $temp.remove();
+                document.getElementById('soundd1').play();
+            }
+
+
+        </script>
+
+ 
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
